@@ -4,9 +4,9 @@
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
+      <nav>
         <slot name="heading"></slot>
-      </h3>
+      </nav>
       <slot></slot>
     </div>
   </div>
@@ -33,7 +33,7 @@ i {
   color: var(--color-text);
 }
 
-h3 {
+nav {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
