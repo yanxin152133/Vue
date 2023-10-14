@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'    // 首页
 import TemplateSyntax from '../views/TemplateSyntax.vue'   // 模板语法
+import ConditionalRendering from '../views/ConditionalRendering.vue'  // 条件渲染
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +15,13 @@ const router = createRouter({
       path: '/TemplateSyntax',
       name: 'TemplateSyntax',
       component: TemplateSyntax
+    },
+    {
+      path: '/ConditionalRendering',
+      name: 'ConditionalRendering',
+      component: ConditionalRendering
     }
+
   ]
 })
 
