@@ -34,4 +34,14 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
     Vue 列表渲染 页面展示
   </WelcomeItem>
 
+  <WelcomeItem>
+    <template #icon>
+      <DocumentationIcon />
+    </template>
+    <template #heading>
+      <RouterLink to="/ListRendering">jenkins测试</RouterLink>
+    </template>
+    jenkins测试
+  </WelcomeItem>
+
 </template>
