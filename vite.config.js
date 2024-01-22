@@ -9,11 +9,12 @@ export default defineConfig({
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
-    }, server: {
+    },
+    server: {
         host: '0.0.0.0'
     },
-    // }, base: process.env.NODE_ENV === "development" ? "/" : "/cyx/", // 默认 '/'
+    base: process.env.NODE_ENV === "development" ? "/" : "/cyx/", // 默认 '/'
     build: {
-        outDir: 'cyx', // 默认是 'dist'  
+        outDir: 'cyx', // 默认是 'dist'
     }
 })

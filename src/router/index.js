@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue' // 首页
 import TemplateSyntax from '../views/TemplateSyntax.vue' // 模板语法
 import ConditionalRendering from '../views/ConditionalRendering.vue' // 条件渲染
