@@ -6,7 +6,7 @@ import ListRendering from '../views/ListRendering.vue' //列表渲染
 import FormInputBindings from "../views/FormInputBindings.vue"  //表单输入绑定
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
