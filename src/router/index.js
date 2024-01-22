@@ -5,7 +5,6 @@ import ConditionalRendering from '../views/ConditionalRendering.vue' // 条件�
 import ListRendering from '../views/ListRendering.vue' //列表渲染
 import FormInputBindings from "../views/FormInputBindings.vue"  //表单输入绑定
 
-const base = (process.env.NODE_ENV === "development" ? "/" : "/cyx/");
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
