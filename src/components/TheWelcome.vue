@@ -6,7 +6,7 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <DocumentationIcon/>
     </template>
     <template #heading>
       <RouterLink to="/TemplateSyntax">模板语法</RouterLink>
@@ -16,7 +16,7 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <DocumentationIcon/>
     </template>
     <template #heading>
       <RouterLink to="/ConditionalRendering">条件渲染</RouterLink>
@@ -26,12 +26,22 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <DocumentationIcon/>
     </template>
     <template #heading>
       <RouterLink to="/ListRendering">列表渲染</RouterLink>
     </template>
     Vue 列表渲染 页面展示
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <DocumentationIcon/>
+    </template>
+    <template #heading>
+      <RouterLink to="/FormInputBindings">表单输入绑定</RouterLink>
+    </template>
+    Vue 表单输入绑定
   </WelcomeItem>
 
 </template>
