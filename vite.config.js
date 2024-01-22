@@ -10,9 +10,9 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     }, server: {
-        host: '0.0.0.0',
-        base: '/cyx'
-    }, base: process.env.NODE_ENV === "development" ? "/" : "/cyx/", // 默认 '/'
+        host: '0.0.0.0'
+    },
+    // }, base: process.env.NODE_ENV === "development" ? "/" : "/cyx/", // 默认 '/'
     build: {
         outDir: 'cyx', // 默认是 'dist'  
     }
