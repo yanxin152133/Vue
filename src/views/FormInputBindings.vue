@@ -65,19 +65,72 @@
         <option>C</option>
       </select>
     </div>
+
+    <div>
+      <div> 值绑定-复选框Selected: {{ selected4 }}</div>
+      <input
+          type="checkbox"
+          v-model="selected4"
+          true-value="yes"
+          false-value="no"/>
+
+      <input
+          type="checkbox"
+          v-model="selected4"
+          :true-value="{ number: 123 }"
+          :false-value="{ number: 456 }"/>
+    </div>
+
+    <div>
+      <div> 值绑定-单选按钮Selected: {{ selected3 }}</div>
+      <input type="radio" id="first" v-model="selected3" :value="{ number: 123 }"/>
+      <label for="first">first</label>
+      <input type="radio" id="second" v-model="selected3" :value="{ number: 456 }"/>
+      <label for="second">second</label>
+    </div>
+
+    <div>
+      <div> 值绑定-选择器选项Selected: {{ selected2 }}</div>
+      <select v-model="selected2">
+        <!-- 内联对象字面量 -->
+        <option :value="{ number: 123 }">123</option>
+        <option :value="{ number: 456 }">456</option>
+        <option :value="{ number: 789 }">789</option>
+      </select>
+    </div>
+
+    <div>
+      <div>修饰符.lazy:{{ msg }}</div>
+      <input v-model.lazy="msg"/>
+    </div>
+
+    <div>
+      <div>修饰符.number:{{ age }}</div>
+      <input v-model.number="age"/>
+    </div>
+
+    <div>
+      <div>修饰符.trim:{{ msg1 }}</div>
+      <input v-model.trim="msg1"/>
+    </div>
   </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
 
-const message=ref()
-const message1=ref()
+const message = ref()
+const message1 = ref()
 const checked = ref(true)
 const checkedNames = ref([])
 const picked = ref('One')
 const selected = ref('')
 const selected1 = ref('')
-
+const selected2 = ref('')
+const selected3 = ref('first')
+const selected4 = ref('')
+const msg = ref('')
+const msg1 = ref('')
+const age = ref('')
 </script>
 
