@@ -39,6 +39,11 @@ const router = createRouter({
             path: '/EventHandling',
             name: 'EventHandling',
             component: EventHandling
+        },
+        {
+            path: '/Watchers',
+            name: 'Watchers',
+            component: Watchers
         }
 
     ]
