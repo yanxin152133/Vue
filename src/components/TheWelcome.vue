@@ -69,9 +69,9 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
       <DocumentationIcon/>
     </template>
     <template #heading>
-      <RouterLink to="/FormInputBindings">test jenkins1</RouterLink>
+      <RouterLink to="/TemplateRefs">模板引用</RouterLink>
     </template>
-    Vue test jenkins1
+    Vue 模板引用
   </WelcomeItem>
 
 </template>

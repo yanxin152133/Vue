@@ -14,13 +14,9 @@
 
   </main>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      flag: false,
-      type: "C"
-    }
-  }
-}
+<script setup>
+import {ref} from "vue";
+
+const flag = ref(false)
+const type = ref('C')
 </script>
